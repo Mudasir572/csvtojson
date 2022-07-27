@@ -19,7 +19,7 @@ router.get("/",function(req,res){
 
   const uniqueId = uuid();
 // const content = 'Some content!';
-const filePath  = `../file-data/files/file${uniqueId}.csv`;
+const filePath  = `../files/file${uniqueId}.csv`;
 fs.writeFile(path.join(__dirname,filePath), fileData, err => {
   if (err) {
     console.error(err);
