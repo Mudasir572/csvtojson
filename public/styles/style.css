@@ -1,0 +1,261 @@
+* {
+    box-sizing: border-box;
+  }
+body{
+    margin: 0;
+    padding: 0;
+    /* background-color: #cfcfcf; */
+    background-color: white;
+    
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #000;
+}
+#full-nav {
+    background-color: #bebebe;
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  #main-header {
+    background-color: #bebebe;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0 2rem; */
+    height: 5rem;
+    /* position: static; */
+    width: 100%;
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+  #logo {
+    display: flex;
+    align-items: center;
+    margin-left: 5rem;
+  }
+  #logo a {
+    text-decoration: none;
+    color: #0066ff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+  }
+  h3{
+    font-size: 1.2rem;
+    color: #ff0000;
+  }
+main{
+margin: 3rem auto;
+width: 85%;
+max-width: 60rem;
+
+}
+main section{
+    margin: 0 auto;
+    width: 100%;
+
+    box-sizing: border-box;
+}
+
+
+#message{
+    display: none; 
+    margin: 0.5rem;
+}
+#input{
+    text-align: left;
+    margin-top: 2.5rem;
+    margin-bottom: 3rem;
+    width: 85%;
+}
+#textarea-wrap{
+    width: 100%;
+    /* min-width: 40rem; */
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+p{
+    text-align: left;
+    margin: 0;
+}
+div label{
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 0.4rem;   
+}
+div input{
+    text-align: center;
+    font-size: 1.4rem;
+    background-color: rgb(225, 221, 216);
+    border-radius: 6px;
+    height: auto;
+    text-align: revert;
+
+}
+
+
+div input::file-selector-button{
+    background-color: #07435b;
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 0.6rem;
+   
+}
+
+
+.textarea-wrap-div{
+width: 90%;
+min-width: 21rem;
+
+}
+
+textarea{
+    margin: 0.5rem auto;
+    width: 100%;
+    /* width: 27rem; */
+
+  
+    background-color: rgb(240, 238, 235);
+    height: 28rem;
+    border-radius: 6px;
+    border: 1px solid rgb(45, 44, 44);
+    
+}
+#json-file-div{
+width: 100%;
+
+}
+textarea:focus-visible{
+outline-color: rgb(67, 97, 217);
+
+}
+
+#buttons{
+    display: flex;
+    gap: 1rem;
+}
+#convertBtn{
+    background-color: rgb(68, 68, 212);
+    padding: 0.4rem 0.6rem;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    /* margin-top: 2.5rem; */
+    font-family: inherit;
+    cursor: pointer;
+    /* display: inline-block; */
+    /* box-sizing: border-box; */
+}
+#convertBtn:hover{
+    background-color: rgb(47, 47, 204);
+}
+
+button{
+    display: block;
+}
+
+.download{
+    /* margin-top: 0.5rem; */
+    color: white;
+    font-family: inherit;
+    font-size: 1.7rem;
+    background-color: rgb(144, 51, 51);
+    border: none;
+    border-radius: 4px;
+    padding: 0.25rem 0.5rem;
+   cursor: pointer;
+}
+.clear{
+    display: inline;
+    background-color: rgb(120, 117, 123);
+}
+#download-file:hover{
+    background-color: rgb(185, 41, 41);
+    }
+.clear:hover{
+    background-color: rgb(152, 152, 152);;
+
+}
+#download-file a{
+    color: white;
+    text-decoration: none;
+}
+footer {
+    width: 100%;
+    margin: 0 auto;
+    color: red;
+    background-color: #e1e0e0;
+    margin-top: 4rem;
+    
+  }
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0.5rem 0.5rem;
+    max-width: 72rem;
+    
+
+  }
+
+  @media screen and (max-width: 52rem) {
+    
+      #textarea-wrap{
+        flex-direction: column;
+    }
+    
+        .textarea-wrap-div{
+            width: 100%;
+            
+            
+            }
+            #json-file-div{
+                width: 100%;
+               
+             }
+   
+}
+@media screen and (max-width: 35rem) {
+    div input{
+        font-size: 1.1rem;
+    
+    }
+    #textarea-wrap{
+        flex-direction: column;
+    }
+   
+        #input{
+            text-align: left;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            width: 90%;
+        }
+        div input{
+            width: 100%;
+        }
+        
+        .textarea-wrap-div{
+          min-width: 15rem;
+          
+          
+          }
+        #json-file-div{
+            /* width: 100%; */ 
+            min-width: 15rem;
+          }
+          
+   
+    .footer-content {
+        flex-direction: column;
+      }
+      
+}
+   

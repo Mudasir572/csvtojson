@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV To JSON</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <script src="/scripts/clear.js" defer></script>
+    <script src="/scripts/download-file.js" defer></script>
+    <script src="/scripts/convert-file.js" defer></script>
+    <script src="/scripts/upload.js" defer></script>
+</head>
+<body>
+    <div id="full-nav">
+        <header id="main-header">
+            <div id="logo"><a href="/">CSVTOJSON</a></div>
+               
+                
+            
+        </header>
+        </div>
+    <main>
+        <!-- <h3 style="color: red;"></h3> -->
+        <!-- <form id="form"> -->
+            <section>
+                <div id="input">
+                    <h3>To get started, upload or paste your CSV data</h3>
+                    <p id="message"></p>
+        <label for="csv">Upload a CSV file</label>
+        <input type="file" name="csv"  id="csv" accept=".csv">
+    </div>
+    <!-- </form> -->
+    <div id="textarea-wrap">
+        <div class="textarea-wrap-div">
+            <p>Or paste your CSV here</p>
+            <textarea id="file-data" cols="30" rows="10"></textarea>
+            <div id="buttons">
+                <button id="convertBtn" data-path="" type="submit">Convert</button>
+                <button class="download clear" id="clear">Clear</button>
+         </div>
+            
+    </div>
+<div class="textarea-wrap-div" id="json-file-div">
+    <p>JSON</p>
+<textarea  id="file-preview" cols="30" rows="10"></textarea>
+<button class="download" id="download-file"><a>Download</a></button>
+</div>
+</div>
+
+
+</section>
+</main>
+<footer>
+    <div class="footer-content">
+      <h2>CSVTOJSON</h2>
+      <p>Copyright &#169 2022 CSVTOJSON.com</p>
+      </div>
+  </footer>
+</body>
+</html>
