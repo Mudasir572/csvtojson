@@ -17,6 +17,16 @@ router.get("/",function(req,res){
 
   const fs = require('fs');
 
+  const folderName = path.join(__dirname,'../files');
+
+try {
+  if (!fs.existsSync(folderName)) {
+    fs.mkdirSync(folderName);
+  }
+} catch (err) {
+  console.error(err);
+}
+
   const uniqueId = uuid();
 // const content = 'Some content!';
 const filePath  = `../files/file${uniqueId}.csv`;
